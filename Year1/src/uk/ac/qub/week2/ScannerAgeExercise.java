@@ -20,7 +20,7 @@ public class ScannerAgeExercise {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// vars
+		        // vars
 				int age = 0;
 				
 				
