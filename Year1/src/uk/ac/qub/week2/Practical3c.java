@@ -30,7 +30,7 @@ public class Practical3c {
 		}
 		name = scanner.next();
 		
-		System.out.println(age + name);
+		System.out.println("Name : " + name + " Age : " + age);
 		
 		scanner.close();
 	}

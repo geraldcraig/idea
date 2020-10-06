@@ -20,7 +20,7 @@ public class Switch {
 		switch (number + 2) {
 		case 1: System.out.println("It's a one");
 			System.out.println("And a nice one at that");
-		break;
+			break;
 		case 2:
 			System.out.println("twas a two");
 			break;
