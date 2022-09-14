@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class Challenge {
 
-    Scanner sc = new Scanner(System.in);
-
     public static void numKilograms(int pounds) {
         double kilograms = 0.453594237;
         System.out.println(pounds * kilograms);
