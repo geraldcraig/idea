@@ -1,1 +1,1 @@
-# qub1
+# Intellij projects
