@@ -5,18 +5,28 @@ import java.sql.PreparedStatement;
 public class DaysOfWeek {
 
     public static void main(String[] args) {
-        printDayOfTheWeek(9);
         int day = 0;
         String result = "";
-        if(day == 0) {
+        if (day == 0) {
             result = "Sunday";
         } else if (day == 1) {
             result = "Monday";
-        } else {
+        } else if (day == 2) {
             result = "Tuesday";
+        } else if (day == 3) {
+            result = "Wednesday";
+        } else if (day == 4) {
+            result = "Thursday";
+        } else if (day == 5) {
+            result = "Friday";
+        } else if (day == 6) {
+            result = "Saturday";
+        } else {
+            System.out.println(result);
         }
-        System.out.println(result);
+        printDayOfTheWeek(6);
     }
+
 
     public static void printDayOfTheWeek(int day) {
         switch (day) {
@@ -46,3 +56,4 @@ public class DaysOfWeek {
         }
     }
 }
+
