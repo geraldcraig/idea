@@ -1,12 +1,18 @@
 package exercise05;
 
-import java.sql.PreparedStatement;
+import java.util.Scanner;
 
 public class DaysOfWeek {
 
     public static void main(String[] args) {
-        int day = 0;
-        String result = "";
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter day as a number: ");
+        int day;
+        day = sc.nextInt();
+        printDayOfTheWeek(day);
+
+        String result;
         if (day == 0) {
             result = "Sunday";
         } else if (day == 1) {
@@ -22,38 +28,38 @@ public class DaysOfWeek {
         } else if (day == 6) {
             result = "Saturday";
         } else {
-            System.out.println(result);
+            result = "invalid day";
         }
-        printDayOfTheWeek(6);
+        System.out.println(result);
+
+        sc.close();
     }
-
-
-    public static void printDayOfTheWeek(int day) {
-        switch (day) {
-            case 0:
-                System.out.println("Sunday");
-            break;
-            case 1:
-                System.out.println("Monday");
-                break;
-            case 2:
-                System.out.println("Tuesday");
-                break;
-            case 3:
-                System.out.println("Wednesday");
-                break;
-            case 4:
-                System.out.println("Thursday");
-                break;
-            case 5:
-                System.out.println("Friday");
-                break;
-            case 6:
-                System.out.println("Saturday");
-                break;
-            default:
-                System.out.println("day not found");
+        public static void printDayOfTheWeek(int day) {
+            switch (day) {
+                case 0:
+                    System.out.println("Sunday");
+                    break;
+                case 1:
+                    System.out.println("Monday");
+                    break;
+                case 2:
+                    System.out.println("Tuesday");
+                    break;
+                case 3:
+                    System.out.println("Wednesday");
+                    break;
+                case 4:
+                    System.out.println("Thursday");
+                    break;
+                case 5:
+                    System.out.println("Friday");
+                    break;
+                case 6:
+                    System.out.println("Saturday");
+                    break;
+                default:
+                    System.out.println("invalid day");
+            }
         }
     }
-}
 
