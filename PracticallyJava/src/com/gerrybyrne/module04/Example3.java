@@ -34,13 +34,9 @@ public class Example3 {
         String vehicleManufacturer;
         String vehicleModel;
         String vehicleColour;
-
         int vehicleAgeInYears;
-
         double vehicleEstimateCurrentPrice;
-
         int vehicleCurrentMileage;
-
         String dateOfBirthOfMainDriver;
 
         System.out.println();
@@ -65,6 +61,7 @@ public class Example3 {
      In the next three lines
      */
         System.out.println("What is the model of the vehicle?\n");
+
         vehicleModel = myScanner.next();
 
         System.out.println("You have told us that the vehicle model is " + vehicleModel);
@@ -86,18 +83,18 @@ public class Example3 {
 
         System.out.println("What is the current mileage (in km) of the vehicle?\n");
         vehicleCurrentMileage = myScanner.nextInt();
-
         System.out.println("You have told us that the vehicle mileage is " + vehicleCurrentMileage + " km");
 
         myScanner.nextLine();
+
         System.out.println("What is the date of birth (dd-mm-yyyy) of the main driver of the vehicle?\n");
+
         dateOfBirthOfMainDriver = myScanner.nextLine();
 
         SimpleDateFormat myDateFormat = new SimpleDateFormat("dd-mm-yyyy");
 
         try {
             Date dateOfBirthOfMainDriverInDateFormat = myDateFormat.parse(dateOfBirthOfMainDriver);
-
             System.out.println("You have told us that the main driver was born on " + dateOfBirthOfMainDriverInDateFormat);
         } catch (ParseException e) {
             e.printStackTrace();
