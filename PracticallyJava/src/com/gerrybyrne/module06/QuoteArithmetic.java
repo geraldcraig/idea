@@ -20,7 +20,7 @@ public class QuoteArithmetic {
         int vehicleAgeInYears;
         int vehicleCurrentMileage;
 
-    /* For the quotation we will use 10000 kilometres as a base line for
+    /* For the quotation we will use 10000 kilometres as a baseline for
     calculating a mileage factor. If the average kilometres travelled
     per year is above the base mileage of 10000 the mileage factor will
     be above 1, if the average kilometres travelled per year is lower
