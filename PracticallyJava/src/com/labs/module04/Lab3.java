@@ -1,8 +1,8 @@
-package com.gerrybyrne.labs.module04;
+package com.labs.module04;
 
 import java.util.Scanner;
 
-public class Lab2 {
+public class Lab3 {
 
     public static void main(String[] args) {
 

@@ -1,4 +1,4 @@
-package com.gerrybyrne.labs.module04;
+package com.labs.module04;
 
 public class Lab4 {
 

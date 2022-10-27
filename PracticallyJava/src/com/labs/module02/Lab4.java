@@ -1,4 +1,4 @@
-package com.gerrybyrne.labs.module02;
+package com.labs.module02;
 
 import java.util.Scanner;
 
