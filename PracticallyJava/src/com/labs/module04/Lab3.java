@@ -10,17 +10,21 @@ public class Lab3 {
 
         int length;
         int breadth;
-        int area;
+        int height;
+        int volume;
 
-        System.out.println("Input length of rectangle");
+        System.out.println("Input length of cuboid");
         length = myScanner.nextInt();
 
-        System.out.println("Input breadth of rectangle");
+        System.out.println("Input breadth of cuboid");
         breadth = myScanner.nextInt();
 
-        area = length * breadth;
+        System.out.println("Input height of cuboid");
+        height = myScanner.nextInt();
 
-        System.out.println("Area of rectangle is:\t" + area);
+        volume = length * breadth * height;
+
+        System.out.println("Volume of cuboid is:\t" + volume);
 
         myScanner.close();
     }
