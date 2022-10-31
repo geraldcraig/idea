@@ -1,5 +1,7 @@
 package com.labs.module05;
 
+import java.util.Scanner;
+
 public class Lab2 {
     /*
     the total score for two tests that a student undertakes
@@ -12,14 +14,26 @@ public class Lab2 {
 
     public static void main(String[] args) {
 
-        int length;
-        int breadth;
-        int area;
+        Scanner myScanner = new Scanner(System.in);
 
-        length = 20;
-        breadth = 10;
-        area = length * breadth;
+        double testOne;
+        double testTwo;
+        double totalScore;
+        double averageScore;
 
-        System.out.println("Area of rectangle is:\t" + area);
+        System.out.println("Enter score for test one\n");
+        testOne = Double.parseDouble(myScanner.next());
+
+        System.out.println("Enter score for test two\n");
+        testTwo = Double.parseDouble(myScanner.next());
+
+        totalScore = testOne + testTwo;
+        averageScore = totalScore / 2.0;
+
+        System.out.println("The total score for the two tests is:\t" + totalScore + "\n");
+
+        System.out.printf("The average score for the two tests is:\t %.2f", averageScore);
+
+        System.out.println();
     }
 }

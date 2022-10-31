@@ -1,5 +1,7 @@
 package com.labs.module05;
 
+import java.util.Scanner;
+
 public class Lab1 {
     /*
     Write a Java console application that will calculate and display the number of points accumulated by a
@@ -12,14 +14,31 @@ public class Lab1 {
 
     public static void main(String[] args) {
 
-        int length;
-        int breadth;
-        int area;
+        Scanner myScanner = new Scanner(System.in);
 
-        length = 20;
-        breadth = 10;
-        area = length * breadth;
+        int gamesWon;
+        int gamesDrawn;
+        int gamesLost;
+        int totalGamesPlayed;
+        int totalPoints;
 
-        System.out.println("Area of rectangle is:\t" + area);
+        System.out.println("Enter number of games won\n");
+        gamesWon = myScanner.nextInt();
+
+        System.out.println("Enter number of games drawn\n");
+        gamesDrawn = myScanner.nextInt();
+
+        System.out.println("Enter number of games lost\n");
+        gamesLost = myScanner.nextInt();
+
+        totalGamesPlayed = gamesWon + gamesDrawn + gamesLost;
+
+        totalPoints = (gamesWon * 3) + gamesDrawn;
+
+        System.out.println("Total number of games played was:\t" + totalGamesPlayed + "\n");
+
+        System.out.println("Total number of points accumulated was:\t" + totalPoints + "\n");
+
+        myScanner.close();
     }
 }
