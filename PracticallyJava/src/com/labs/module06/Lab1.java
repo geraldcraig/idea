@@ -23,10 +23,17 @@ Tax Deductions
 Net Pay
  */
 
+import java.util.Scanner;
+
 public class Lab1 {
 
     public static void main(String[] args) {
 
+        Scanner myScanner = new Scanner(System.in);
+
+        int numberOfHoursWorked;
+        int ratePerHour;
+        int nationalInsuranceRate;
 
     }
 }
