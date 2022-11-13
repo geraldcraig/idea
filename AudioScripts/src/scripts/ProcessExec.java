@@ -13,7 +13,7 @@ public class ProcessExec {
             // Process provides control of native processes started by ProcessBuilder.start and Runtime.exec.
             // getRuntime() returns the runtime object associated with the current Java application.
             //Process p = Runtime.getRuntime().exec("spleeter separate -p spleeter:5stems -o output " + input);
-            Process p = Runtime.getRuntime().exec("python3 hello.py " );
+            Process p = Runtime.getRuntime().exec("spleeter separate -p spleeter:2stems -o output audio_example.mp3" );
             BufferedReader stdInput = new BufferedReader(new InputStreamReader(p.getInputStream()));
             BufferedReader stdError = new BufferedReader(new InputStreamReader(p.getErrorStream()));
             // read the output from the command
